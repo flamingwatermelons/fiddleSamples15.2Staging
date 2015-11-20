@@ -1,0 +1,71 @@
+<script src="http://staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.dv.js"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+
+<script id="budgetTooltipTemplate" type="text/x-ig-tmpl">
+        <div class="ui-chart-tooltip">
+            <div class='bold'>${item.Label}</div>
+            <div>Budget: <label class='bold'>$${item.Budget}K</label></div>
+        </div>
+    </script>
+
+<div class="title">Departments</div>
+    <div class="subtitle">Budget (inner ring) and Department Size (outer ring)</div>
+
+    
+    <div id="chart"></div>
+
+    <br />
+    <table class="options" style="max-width: 550px; width: 100%;">
+        <tr>
+            <td>InnerExtent:</td>
+            <td class="optionTdWidth">
+                <div id="innerExtent" class="optionTdWidth"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Start Angle for the Budget Series
+            </td>
+            <td class="optionTdWidth">
+                <div id="angleBudget" class="optionTdWidth"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Start Angle for the Department Size Series
+            </td>
+            <td class="optionTdWidth">
+                <div id="angleDepartmentSize" class="optionTdWidth"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Label Position for the Budget Series:</td>
+            <td class="optionTdWidth">
+                <select id="labelPosition" class="optionTdWidth">
+                    <option value="center" selected="selected">Center</option>
+                    <option value="insideEnd">Inside End</option>
+                    <option value="bestFit">Best Fit</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Label Position for the Department Size Series:</td>
+            <td class="optionTdWidth">
+                <select id="labelPosition2" class="optionTdWidth">
+                    <option value="center">Center</option>
+                    <option value="insideEnd">Inside End</option>
+                    <option value="outsideEnd" selected="selected">Outside End</option>
+                    <option value="bestFit">Best Fit</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Label Extent (Outside End)</td>
+            <td class="optionTdWidth">
+                <div id="labelExtent" class="optionTdWidth"></div>
+            </td>
+        </tr>
+    </table>

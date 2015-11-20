@@ -1,0 +1,30 @@
+<script src="http://staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.dv.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.lob.js"></script>
+<script src="http://staging.igniteui.local/15-2/js-data/financial-data-random"></script>
+<script src="http://staging.igniteui.local/15-2/TypeScriptSamples/zoombar/typescript.js"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+
+<script id="tooltipTemplate" type="text/x-jquery-tmpl">
+        <span class="tooltip">${item.DateString}</span>
+        <br />
+        <span class="tooltip">Open:&nbsp;</span>
+        <span>${item.Open}</span>
+        <br />
+        <span class="tooltip">Low:&nbsp;</span>
+        <span>${item.Low}</span>
+        <br />
+        <span class="tooltip">High:&nbsp;</span>
+        <span>${item.High}</span>
+        <br />
+        <span class="tooltip">Close:&nbsp;</span>
+        <span>${item.Close}</span>
+        <br />
+    </script>
+
+<div id="chart"></div>
+    <div id="zoombar"></div>
