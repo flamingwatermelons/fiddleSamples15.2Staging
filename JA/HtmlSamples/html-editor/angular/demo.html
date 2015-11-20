@@ -1,0 +1,22 @@
+<script src="http://jp.staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://jp.staging.igniteui.local/15-2/js/angular.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.lob.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/extensions/igniteui-angular.js"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<link href="http://jp.staging.igniteui.local/15-2/css/bootstrap/bootstrap.min.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<div ng-app="sampleApp" ng-controller="gridController">
+        <div class="row">
+            <div class="col-md-8">
+                <ig-html-editor id="htmlEditor" height="400px" width="100%" value="data"></ig-html-editor>
+            </div>
+            <div class="col-md-4">
+                <textarea ng-model="data"></textarea>
+            </div>
+        </div>
+    </div>

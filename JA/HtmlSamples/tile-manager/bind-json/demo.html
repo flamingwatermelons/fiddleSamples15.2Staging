@@ -1,0 +1,36 @@
+<script src="http://jp.staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.lob.js"></script>
+<script src="http://jp.staging.igniteui.local/15-2/js-data/recipes"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<script id="maximized-state" type="text/template">
+        <div class="item-inner-container" style="background-image: url(${picture}); 
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${picture}',sizingMethod='scale');">
+            <div class="max-title-and-ingredients-container">
+                <h3>${name}</h3>
+                <ul class="ingredients">
+                    {{each ${ingredients} }}
+                        <li>${ingredients.description}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </script>
+<script id="minimized-state" type="text/template">
+        <div class="item-inner-container" style="background-image: url(${picture});
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${picture}',sizingMethod='scale');">
+            <div class="minimized-title-container">
+                <div class="minimized-title">
+                    ${name}
+                </div>
+            </div>
+        </div>
+    </script>
+
+<div id="dashboard" class="dashboard">
+    </div>

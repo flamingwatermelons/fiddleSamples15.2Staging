@@ -1,0 +1,26 @@
+<script src="http://jp.staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.lob.js"></script>
+<script src="http://jp.staging.igniteui.local/15-2/js-data/credit-cards"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<div class="payment-form">
+        <div id="paymentType" name="paymentType"></div>
+        <div id="payment-label"><label id="paymentTypeLabel" for="paymentType">この販売者はクレジット カードのみ受け付けます</label></div>
+    </div>
+    <div class="card-form">
+        <div id="creditCardType"></div><img src="http://jp.staging.igniteui.local/15-2/images/samples/credit-cards/visa_logo_large.gif" id="cardLogo" class="card-logo" alt="Visa"></img>
+
+        <div id="creditCardNumber"></div>
+        <div class="good-through ui-state-disabled">
+            <label>有効<br />期限</label>
+        </div>
+        <div id="month" name="month"></div>
+        <div id="year"></div>
+        <input id="ccv"></input>
+    </div>
+    <input type="button" value="購入" id="buy"></input>

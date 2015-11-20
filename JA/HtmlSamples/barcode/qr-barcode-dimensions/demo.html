@@ -1,0 +1,45 @@
+<script src="http://jp.staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.dv.js"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<div id="barcode"></div>
+
+    
+
+    <fieldset id="barcodeOptions">
+        <legend>オプション</legend>
+        <table>
+            <tr>
+                <td>XDimension</td>
+                <td>
+                    <div id="xDimensionSlider" style="width: 100px; margin: 12px"></div>
+                </td>
+                <td>
+                    <label id="xDimensionLabel">0.75</label>
+                </td>
+            </tr>
+            <tr>
+                <td>バー塗りつぶしモード</td>
+                <td>
+                    <input type="radio" name="barsFillMode" value="fillSpace" checked="checked" style="margin: 12px"></input>fillSpace
+                </td>
+                <td>
+                    <input type="radio" name="barsFillMode" value="ensureEqualSize" style="margin: 12px"></input>ensureEqualSize
+                </td>
+            </tr>
+            <tr>
+                <td>引き伸ばし</td>
+                <td>
+                    <input type="radio" name="stretch" value="none" checked="checked" style="margin: 12px" id="stretchNone"></input>none
+                </td>
+                <td>
+                    <input type="radio" name="stretch" value="uniform" style="margin: 12px"></input>uniform
+                </td>
+            </tr>
+        </table>
+    </fieldset>

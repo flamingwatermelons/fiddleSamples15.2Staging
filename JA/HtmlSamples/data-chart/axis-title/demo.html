@@ -1,0 +1,35 @@
+<script src="http://jp.staging.igniteui.local/15-2/js/modernizr.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.core.js"></script>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/infragistics.dv.js"></script>
+<script src="http://jp.staging.igniteui.local/15-2/js-data/world-energy-production"></script>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/themes/infragistics/infragistics.theme.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
+<link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/modules/infragistics.ui.chart.css" rel="stylesheet"></link>
+<script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
+
+<table><tr><td id="chart" class="chartElement"></td><td id="columnLegend" style="float: left"></td></tr></table>
+                
+        <div class="EIA-attribution">
+            エネルギーのデータ ソース:<br />
+            <a href="http://www.eia.gov" target="_blank">U.S. Energy Information Administration (September 2012) </a>
+        </div>
+        <br/>
+        <div>
+            <fieldset id="chartOptions">
+                <legend>軸角度</legend>
+            
+
+                <div class="optionContainer">
+                    Y 軸を回転
+                    <div id="yAxisAngleSlider" class="sliderBounds"></div>
+                    <label id="yAxisAngleLabel">-90</label>
+                </div>
+            <div class="optionContainer">
+                    X 軸を回転
+                    <div id="xAxisAngleSlider" class="sliderBounds"></div>
+                    <label id="xAxisAngleLabel">0</label>
+                </div>
+            </fieldset>
+        </div>
