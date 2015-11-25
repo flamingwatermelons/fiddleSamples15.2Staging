@@ -1,32 +1,42 @@
 $(function () {
 $('#clientName').igTextEditor({
-            placeHolder: "Company name"
+            placeHolder: "会社名"
         });
         $('#clientMail').igTextEditor({
             placeHolder: "someone@example.com"
         });
+        $('#clientMail').igValidator({
+            email: true,
+            notificationOptions: {
+                direction: "bottom",
+                mode: "popover"
+            }
+        });
         $('#deliveryAddress').igTextEditor({
-            placeHolder: "Street address, P.O. box"
+            placeHolder: "住所、私書箱番号"
         });
         $('#deliveryDate').igDateEditor({
-            placeHolder: "12/30/2015"
+            placeHolder: "2015/12/30"
         });
         $('#freeDelivery').igCheckboxEditor({
             size: "small"
         });
         $('#price').igCurrencyEditor({
             value: "79",
+            minValue : 0,
             currencySymbol: "€"
         });
         $('#amount').igNumericEditor({
             dataMode: "int",
             value: 10,
+            minValue: 1,
             blur: function (evt) {
                 calculateTotalPrice();
             }
         });
         $('#discount').igPercentEditor({
-            value: 0.08
+            value: 0.08,
+            minValue: 0
         });
 
         $(document).delegate("#price", "igcurrencyeditorblur", function (evt) {
@@ -66,7 +76,7 @@ $('#clientName').igTextEditor({
                 $('#price').igCurrencyEditor("option", "value", calculateNewPrice(metricPrice));
                 //Update labels to Imperial units
                 $("label[for='pricem3']").text("キュービック ヤードの価格");
-                $("label[for='amountm3']").text("$$Ammount_Cubic_Yard");
+                $("label[for='amountm3']").text("キュービック ヤードの量");
 
                 //Update igNumericEditor
                 //Update the amount in cubic yard

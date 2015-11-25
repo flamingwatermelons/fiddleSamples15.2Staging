@@ -1,7 +1,7 @@
 $(function () {
 $(document).ready(function () {
 
-            var colors = ["blue", "red", "brown"];
+            var colors = ["青", "赤", "茶"];
 
             $("#shoeSize").igNumericEditor({
                 minValue: 37,

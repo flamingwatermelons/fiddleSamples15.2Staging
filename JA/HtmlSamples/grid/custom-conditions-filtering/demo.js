@@ -44,8 +44,8 @@ $(function () {
                             columnKey: "Age",
                             customConditions: {
                                 Over21: {
-                                    labelText: 'Over 21',
-                                    expressionText: 'Over 21',
+                                    labelText: '21 歳以上',
+                                    expressionText: '21 歳以上',
                                     requireExpr: false,
                                     filterFunc: filterAge
                                 }

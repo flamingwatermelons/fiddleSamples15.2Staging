@@ -2,12 +2,12 @@ div.float {
             float: left;
             margin-right: 10px;
         }
-        label {
-            display: block;
-            line-height: 20px;
-            font-family: 'Open Sans',Arial,sans-serif;
-            font-size: 13px;
-        }
+            div.float label {
+                display: block;
+                line-height: 20px;
+                font-family: 'Open Sans',Arial,sans-serif;
+                font-size: 13px;
+            }
         select {
             width: 150px;
             height: 28px;

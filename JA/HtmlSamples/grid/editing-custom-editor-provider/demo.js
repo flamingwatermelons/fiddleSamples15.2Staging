@@ -121,7 +121,7 @@ var northwindEmployees = [
                             }
                         ],
                         rowEditDialogOptions: {
-                            width: "530px",
+                            width: "560px",
                             height: "350px",
                             dialogTemplateSelector: "#dialogTemplate",
                             editorsTemplateSelector: "#editorsTemplate",
