@@ -5,6 +5,13 @@ $('#clientName').igTextEditor({
         $('#clientMail').igTextEditor({
             placeHolder: "someone@example.com"
         });
+        $('#clientMail').igValidator({
+            email: true,
+            notificationOptions: {
+                direction: "bottom",
+                mode: "popover"
+            }
+        });
         $('#deliveryAddress').igTextEditor({
             placeHolder: "Street address, P.O. box"
         });
@@ -16,17 +23,20 @@ $('#clientName').igTextEditor({
         });
         $('#price').igCurrencyEditor({
             value: "79",
+            minValue : 0,
             currencySymbol: "€"
         });
         $('#amount').igNumericEditor({
             dataMode: "int",
             value: 10,
+            minValue: 1,
             blur: function (evt) {
                 calculateTotalPrice();
             }
         });
         $('#discount').igPercentEditor({
-            value: 0.08
+            value: 0.08,
+            minValue: 0
         });
 
         $(document).delegate("#price", "igcurrencyeditorblur", function (evt) {
@@ -66,7 +76,7 @@ $('#clientName').igTextEditor({
                 $('#price').igCurrencyEditor("option", "value", calculateNewPrice(metricPrice));
                 //Update labels to Imperial units
                 $("label[for='pricem3']").text("Price per cubic yard");
-                $("label[for='amountm3']").text("$$Ammount_Cubic_Yard");
+                $("label[for='amountm3']").text("Amount in cubic yard");
 
                 //Update igNumericEditor
                 //Update the amount in cubic yard

@@ -43,7 +43,7 @@
             top: 0px;
             left: 0px;
             height: 200px;
-            width: 150px;
+            width: 180px;
             padding-top: 15px;
         }
 
@@ -51,7 +51,7 @@
         {
             position: absolute;
             top: 0px;
-            left: 150px;
+            left: 180px;
             height: 200px;
             width: 150px;
             margin: 0px auto;
@@ -62,7 +62,7 @@
         {
             position: absolute;
             top: 0px;
-            left: 300px;
+            left: 330px;
             height: 200px;
             width: 180px;
             padding-top: 15px;
@@ -73,7 +73,7 @@
             position: absolute;
             float: right;
             top: 0px;
-            left: 480px;
+            left: 510px;
             height: 200px;
             width: 250px;
             padding-top: 15px;

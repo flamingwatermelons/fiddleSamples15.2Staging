@@ -5,7 +5,7 @@ $(function () {
                 dataSource: northwind,
                 responseDataKey: "results",
                 dataSourceType: "json",
-               caption: "Orders By Employee",
+                caption: "Orders By Employee",
                 features: [
                     {
                         name: "Responsive",
