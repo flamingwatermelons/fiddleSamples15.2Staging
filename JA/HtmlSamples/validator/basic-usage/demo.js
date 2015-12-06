@@ -107,7 +107,7 @@ $(document).ready(function () {
 				    onchange: true,
 				    valueRange: {
 				        min: 1.5,
-				        errorMessage: "星 1 つ以上が必要 (カスタム メッセージ)"
+				        errorMessage: "星 {0} つ以上が必要 (カスタム メッセージ)"
 				    },
 				    notificationOptions: {
 				        mode: "popover"

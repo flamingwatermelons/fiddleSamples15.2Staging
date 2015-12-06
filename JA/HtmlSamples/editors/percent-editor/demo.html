@@ -7,19 +7,29 @@
 <link href="http://staging.igniteui.local/15-2/IgniteUI/css/structure/infragistics.css" rel="stylesheet"></link>
 <script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
 
-<div class="percentEditors">
-        <h4>デフォルトの構成</h4>
-        <div id="defaultPercentEditor"></div>
-    
-        <h4>負の数のパターン</h4>
-        <div id="percentEditor"></div>
-
-        <h4>10 進数およびグループ セパレーターの構成</h4>
-        <div id="percentEditor2"></div>
-
-        <h4>リスト項目の構成</h4>
-        <div id="percentEditor3"></div>
-
-        <h4>スピン ボタンの構成</h4>
-        <div id="percentEditor4"></div>
+<div id="payment">
+        <div id="salary">
+            <h2>売上総利益</h2>
+            <p id="gross">￥738990.00</p>
+            <h2>当期純利益</h2>
+            <p id="nett">￥773022.95</p>
+        </div>
+        <div id="deduction">
+            <label>国税</label>
+            <br />
+            <input id="federalTax"></input>
+            <br />
+            <label>地方税</label>
+            <br />
+            <input id="stateTax"></input>
+            <br />
+            <label>国民年金</label>
+            <br />
+            <input id="socialSecurity"></input>
+            <br />
+            <label>医療保険</label>
+            <br />
+            <input id="medicare"></input>
+            <br />
+        </div>
     </div>
