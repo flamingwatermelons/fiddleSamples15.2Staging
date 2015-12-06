@@ -107,7 +107,7 @@ $(document).ready(function () {
 				    onchange: true,
 				    valueRange: {
 				        min: 1.5,
-				        errorMessage: "At least 1 star required (custom message)"
+				        errorMessage: "At least {0} star required (custom message)"
 				    },
 				    notificationOptions: {
 				        mode: "popover"

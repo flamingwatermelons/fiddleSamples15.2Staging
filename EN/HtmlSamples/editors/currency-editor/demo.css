@@ -1,3 +1,11 @@
-.currencyEditors h4 {
-            margin-bottom:.5em;
+#payment {
+            width: 50%;
+        }
+
+        #salary {
+            float: left;
+        }
+
+        #deduction {
+            float: right;
         }
