@@ -29,6 +29,7 @@ $(document).ready(function () {
             buttonType: "spin",
             spinDelta: 0.01,
             value: -331.80,
+            maxDecimals:2,
             minValue: -331.80,
             maxValue: 331.80,
             valueChanged: function (evt, ui) {

@@ -67,6 +67,8 @@ $(document).ready(function () {
                 $("#comment").igTextEditor("option", "value", "");
                 $("#readonly").igCheckboxEditor("option", "checked", false);
                 $("#disable").igCheckboxEditor("option", "checked", false);
+                $("#comment").igTextEditor("option", "disabled", false);
+                $("#comment").igTextEditor("option", "readOnly", false);
             });
         });
 });
