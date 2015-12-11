@@ -8,7 +8,6 @@ $(document).ready(function () {
             });
 
             $("#serialNumber").igMaskEditor({
-                width: "300px",
                 inputMask: 'AAAA-AAAA-AAAA-AAAA',
                 dataMode: "rawTextWithLiterals"
             });

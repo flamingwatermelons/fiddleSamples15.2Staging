@@ -3,6 +3,8 @@ function handleFiles(files) {
 		var excelFile,
 			fileReader = new FileReader();
 
+		$("#result").hide();
+
 		fileReader.onload = function (e) {
 			var buffer = new Uint8Array(fileReader.result);
 
@@ -45,13 +47,21 @@ function handleFiles(files) {
 					createGrid(data, gridColumns); // we can also skip passing the gridColumns use autoGenerateColumns = true, or modify the gridColumns array
 
 				},
-				function error(er) {
-					console.log(er.message());
+				function error(error) {
+				    $("#result").text(The format of the file you have selected is not supported. Please select a valid Excel file ('.xls, *.xlsx').);
+				    $("#result").show(1000);
 				});
 		}
 
-		excelFile = files[0];
-		fileReader.readAsArrayBuffer(excelFile);
+		if (files.length > 0) {
+		    excelFile = files[0];
+		    if (excelFile.type === "application/vnd.ms-excel" || excelFile.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
+		        fileReader.readAsArrayBuffer(excelFile);
+		    } else {
+		        $("#result").text(The format of the file you have selected is not supported. Please select a valid Excel file ('.xls, *.xlsx').);
+		        $("#result").show(1000);
+		    }
+		}
 	};
 
 	function createGrid(data, gridColumns) {

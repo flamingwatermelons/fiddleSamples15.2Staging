@@ -7,9 +7,7 @@ $(document).ready(function () {
                 }
             });
 
-            $("#serialNumber").igTextEditor({
-                width: "300px"
-            });
+            $("#serialNumber").igTextEditor();
 
             $("#zipCode").igNumericEditor({
                 placeHolder: "00000"
@@ -22,7 +20,6 @@ $(document).ready(function () {
             $("#comment").igTextEditor({
                 textMode: "multiline",
                 height: 100,
-                width: 250,
                 visibleItemsCount: 5
             });
 

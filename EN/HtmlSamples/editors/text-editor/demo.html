@@ -8,33 +8,33 @@
 
 <h3>Register your ultimate</h3>
     <form>
-        <label>Email</label>
-        <br />
-        <input id="email"></input>
-        <br />
-        <label>Serial Number</label>
-        <br />
-        <input id="serialNumber"></input>
-        <br />
-        <label>Zip Code</label>
-        <br />
-        <input id="zipCode"></input>
-        <br />
-        <label>Phone Number</label>
-        <br />
-        <input id="phone"></input>
-        <br />
-        <label>Comment</label>
-        <br />
-        <div id="comment"></div>
-        <br />
-        <label id="lock" for="readonly">Lock for editing</label>
-        <br />
-        <input id="readonly"></input>
-        <br />
-        <label for="disable">Prevent from submission</label>
-        <br />
-        <input id="disable"></input>
-        <br />
+        <div class="group-fields">
+            <label for="email">Email</label>
+            <input id="email"></input>
+        </div>
+        <div class="group-fields">
+            <label for="serialNumber">Serial Number</label>
+            <input id="serialNumber"></input>
+        </div>
+        <div class="group-fields">
+            <label for="zipCode">Zip Code</label>
+            <input id="zipCode"></input>
+        </div>
+        <div class="group-fields">
+            <label for="phone">Phone Number</label>
+            <input id="phone"></input>
+        </div>
+        <div class="group-fields">
+            <label for="comment">Comment</label>
+            <div id="comment"></div>
+        </div>
+        <div class="group-fields">
+            <input id="readonly"></input>
+            <label for="readonly" id="lock" class="inline">Lock for editing</label>
+        </div>
+        <div class="group-fields">
+            <input id="disable"></input>
+            <label for="disable" class="inline">Prevent from submission</label>
+        </div>
         <input id="btn" type="button" value="Cancel"></input>
     </form>

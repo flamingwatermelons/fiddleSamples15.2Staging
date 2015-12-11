@@ -1,0 +1,14 @@
+h3 {
+            font-size:20px;
+            margin-bottom:20px;
+        }
+        .group-fields {
+            margin-bottom: 10px;
+        }
+        .group-fields .inline {
+            display:inline;
+        }
+        .group-fields .ui-igcheckbox-normal {
+            margin-right: 5px;
+            float: left;
+        }

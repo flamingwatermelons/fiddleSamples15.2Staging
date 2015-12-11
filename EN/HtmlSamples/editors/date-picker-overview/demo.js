@@ -4,7 +4,6 @@ $(document).ready(function () {
             tomorrow = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
 
             $("#currentTime").igDateEditor({
-                width: 230,
                 dateInputFormat: "dateTime",
                 value: new Date(),
                 dataMode: "date",
@@ -12,7 +11,6 @@ $(document).ready(function () {
             });
 
             $("#departure").igDatePicker({
-                width: 230,
                 dateInputFormat: "ddd, MMM d, yyyy",
                 value: today,
                 dataMode: "date",
@@ -28,7 +26,6 @@ $(document).ready(function () {
             });
 
             $("#departureTime").igDateEditor({
-                width: 230,
                 dateInputFormat: "hh:mm",
                 value: new Date(),
                 dataMode: "date",
@@ -36,7 +33,6 @@ $(document).ready(function () {
                 width: 100
             });
             $("#return").igDatePicker({
-                width: 230,
                 value: tomorrow,
                 dateInputFormat: "ddd, MMM d, yyyy",
                 dataMode: "date",
@@ -47,7 +43,6 @@ $(document).ready(function () {
             });
 
             $("#returnTime").igDateEditor({
-                width: 230,
                 dateInputFormat: "hh:mm",
                 value: new Date(),
                 dataMode: "date",
