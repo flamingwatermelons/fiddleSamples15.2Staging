@@ -1,0 +1,26 @@
+h3 {
+            font-size:20px;
+            margin-bottom:20px;
+        }
+        .group-fields {
+            margin-bottom: 10px;
+        }
+        .group-fields label {
+            display: block;
+            line-height:18px;
+        }
+        .group-fields .inline {
+            display:inline;
+        }
+        .group-fields .ui-igcheckbox-normal {
+            margin-right: 5px;
+            float: left;
+        }
+        .group-fields .ui-igedit-container {
+            width: 250px;
+        }
+        @media screen and (min-width:360px) {
+            .group-fields .ui-igedit-container {
+                width: 300px;
+            }
+        }

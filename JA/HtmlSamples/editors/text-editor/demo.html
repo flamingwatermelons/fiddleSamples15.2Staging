@@ -9,33 +9,33 @@
 
 <h3>Ultimate 製品の登録</h3>
     <form>
-        <label>電子メール</label>
-        <br />
-        <input id="email"></input>
-        <br />
-        <label>製品番号</label>
-        <br />
-        <input id="serialNumber"></input>
-        <br />
-        <label>郵便番号</label>
-        <br />
-        <input id="zipCode"></input>
-        <br />
-        <label>電話番号</label>
-        <br />
-        <input id="phone"></input>
-        <br />
-        <label>コメント</label>
-        <br />
-        <div id="comment"></div>
-        <br />
-        <label id="lock" for="readonly">編集のロック</label>
-        <br />
-        <input id="readonly"></input>
-        <br />
-        <label for="disable">送信の禁止</label>
-        <br />
-        <input id="disable"></input>
-        <br />
+        <div class="group-fields">
+            <label for="email">電子メール</label>
+            <input id="email"></input>
+        </div>
+        <div class="group-fields">
+            <label for="serialNumber">製品番号</label>
+            <input id="serialNumber"></input>
+        </div>
+        <div class="group-fields">
+            <label for="zipCode">郵便番号</label>
+            <input id="zipCode"></input>
+        </div>
+        <div class="group-fields">
+            <label for="phone">電話番号</label>
+            <input id="phone"></input>
+        </div>
+        <div class="group-fields">
+            <label for="comment">コメント</label>
+            <div id="comment"></div>
+        </div>
+        <div class="group-fields">
+            <input id="readonly"></input>
+            <label for="readonly" id="lock" class="inline">編集のロック</label>
+        </div>
+        <div class="group-fields">
+            <input id="disable"></input>
+            <label for="disable" class="inline">送信の禁止</label>
+        </div>
         <input id="btn" type="button" value="キャンセル"></input>
     </form>

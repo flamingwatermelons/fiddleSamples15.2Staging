@@ -8,15 +8,32 @@
 <script src="http://staging.igniteui.local/15-2/IgniteUI/js/i18n/infragistics-ja.js"></script>
 
 <h3>航空券の予約</h3>
-    <p>今日 <input id="currentTime"></input></p>
-    <label>往路</label><br />
-    <input id="departure"></input>
-    <label>前後</label><br />
-    <input id="departureTime"></input>
-    <label>復路</label><br />
-    <input id="return"></input>
-    <label>前後</label><br />
-    <input id="returnTime"></input>
-    <label>片道</label><br />
-    <input id="oneWayTicket"></input>
-    <input type="button" value="予約する"></input>
+    <div class="group-fields">
+        <label for="currentTime">今日</label>
+        <input id="currentTime"></input>
+    </div>
+    <div class="group-fields clearfix">
+        <div>
+            <label for="departure">往路</label>
+            <input id="departure"></input>
+        </div>
+        <div>
+            <label for="departureTime">前後</label>
+            <input id="departureTime"></input>
+        </div>
+    </div>
+    <div class="group-fields clearfix">
+        <div>
+            <label for="return">復路</label>
+            <input id="return"></input>
+        </div>
+        <div>
+            <label for="returnTime">前後</label>
+            <input id="returnTime"></input>
+        </div>
+    </div>
+    <div class="group-fields">
+        <input id="oneWayTicket"></input>
+        <label for="oneWayTicket" class="inline">片道</label><br />
+    </div>
+    <input type="button" value="予約"></input>
