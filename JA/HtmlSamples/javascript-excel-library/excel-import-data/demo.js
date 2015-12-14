@@ -48,7 +48,7 @@ function handleFiles(files) {
 
 				},
 				function error(error) {
-				    $("#result").text(The format of the file you have selected is not supported. Please select a valid Excel file ('.xls, *.xlsx').);
+				    $("#result").text(選択のファイル形式がサポートされていません。有効な Excel ファイルを選択してください ('.xls, *.xlsx')。);
 				    $("#result").show(1000);
 				});
 		}
@@ -58,7 +58,7 @@ function handleFiles(files) {
 		    if (excelFile.type === "application/vnd.ms-excel" || excelFile.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") {
 		        fileReader.readAsArrayBuffer(excelFile);
 		    } else {
-		        $("#result").text(The format of the file you have selected is not supported. Please select a valid Excel file ('.xls, *.xlsx').);
+		        $("#result").text(選択のファイル形式がサポートされていません。有効な Excel ファイルを選択してください ('.xls, *.xlsx')。);
 		        $("#result").show(1000);
 		    }
 		}
